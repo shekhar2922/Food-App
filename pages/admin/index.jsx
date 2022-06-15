@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import Head from "next/Head";
+import Head from "next/head";
 import { useState } from "react";
 import styles from "../../styles/Admin.module.css";
 
