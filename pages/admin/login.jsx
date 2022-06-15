@@ -1,5 +1,5 @@
 import axios from "axios";
-import Head from "next/Head";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../../styles/Login.module.css";
