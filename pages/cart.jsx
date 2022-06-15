@@ -1,6 +1,6 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
-import Head from "next/Head";
+import Head from "next/head";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import {
