@@ -94,5 +94,14 @@
 
   .item:nth-child(1) {
     flex: 3;
+    margin-left: -35px;
+  }
+
+  .item:last-child {
+    margin-right: -20px;
+  }
+
+  .text:last-child {
+    font-size: 18px;
   }
 }

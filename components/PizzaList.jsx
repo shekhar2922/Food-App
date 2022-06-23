@@ -4,9 +4,9 @@ import PizzaCard from "./PizzaCard";
 const PizzaList = ({ pizzaList }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE BEST PIZZA IN YOUR TOWN</h1>
+      <h1 className={styles.title}>THE BEST PIZZA IN  YOUR TOWN</h1>
       <p className={styles.desc}>
-        Always our best food, made especially for you. All you need is love and Pizzaaa.
+      Always our best food, made especially for you. All you need is love and Pizzaaa.
       </p>
       <div className={styles.wrapper}>
         {pizzaList.map((pizza) => (
