@@ -18,6 +18,7 @@
   color: white;
   padding: 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .button:first-child {
@@ -27,4 +28,41 @@
 
 .button:last-child {
   background-color: crimson;
+}
+
+.dltBtn {
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:teal;
+}
+
+@media screen and (max-width: 480px){
+  .container {
+    display : flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .th {
+    display : none;
+  }
+
+  .orderTh {
+    display : none;
+  }
 }

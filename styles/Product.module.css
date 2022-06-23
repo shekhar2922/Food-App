@@ -92,6 +92,7 @@
   background-color: #d1411e;
   color: white;
   border: none;
+  border-radius : 5px;
   font-weight: 500;
   cursor: pointer;
 }

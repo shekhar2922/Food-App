@@ -36,6 +36,7 @@ const Product = ({ pizza }) => {
 
   const handleClick = () => {
     dispatch(addProduct({...pizza, extras, price, quantity}));
+    alert("Product added to Cart");
   };
 
   return (

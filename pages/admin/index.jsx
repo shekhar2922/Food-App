@@ -48,17 +48,18 @@ const Index = ({ orders, products }) => {
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
-              <th>Image</th>
-              <th>Id</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Action</th>
+              <th className={styles.th}>Image</th>
+              <th className={styles.th}>Id</th>
+              <th className={styles.th}>Title</th>
+              <th className={styles.th}>Price</th>
+              <th className={styles.th}>Action</th>
             </tr>
           </tbody>
           {pizzaList.map((product) => (
             <tbody key={product._id}>
               <tr className={styles.trTitle}>
                 <td>
+                  <div className={styles.imgContainer}>
                   <Image
                     src={product.img}
                     width={50}
@@ -66,6 +67,7 @@ const Index = ({ orders, products }) => {
                     objectFit="cover"
                     alt=""
                   />
+                  </div>                 
                 </td>
                 <td>{product._id.slice(0, 5)}...</td>
                 <td>{product.title}</td>
@@ -89,12 +91,12 @@ const Index = ({ orders, products }) => {
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
-              <th>Id</th>
-              <th>Customer</th>
-              <th>Total</th>
-              <th>Payment</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th className={styles.orderTh}>Id</th>
+              <th className={styles.orderTh}>Customer</th>
+              <th className={styles.orderTh}>Total</th>
+              <th className={styles.orderTh}>Payment</th>
+              <th className={styles.orderTh}>Status</th>
+              <th className={styles.orderTh}>Action</th>
             </tr>
           </tbody>
           {orderList.map((order) => (
@@ -108,7 +110,7 @@ const Index = ({ orders, products }) => {
                 </td>
                 <td>{status[order.status]}</td>
                 <td>
-                  <button onClick={() => handleStatus(order._id)}>
+                  <button className={styles.dltBtn} onClick={() => handleStatus(order._id)}>
                     Next Stage
                   </button>
                 </td>
