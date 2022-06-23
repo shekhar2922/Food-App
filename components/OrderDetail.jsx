@@ -3,6 +3,7 @@ import styles from "../styles/OrderDetail.module.css";
 
 const OrderDetail = ({ total, createOrder, setClose }) => {
   const [customer, setCustomer] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
 
   const handleClick = (e) => {
@@ -11,7 +12,7 @@ const OrderDetail = ({ total, createOrder, setClose }) => {
       alert("Please add a product to cart first")
       return;
     }
-    createOrder({ customer, address, total, method: 0 });
+    createOrder({ customer, phoneNumber, address, total, method: 0 });
     alert("Your order is successfull!")
     setClose(true);
   };
@@ -41,6 +42,7 @@ const OrderDetail = ({ total, createOrder, setClose }) => {
               type="text"
               placeholder="+1 234 567 89"
               className={styles.input}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               required
               maxLength="10"
             />
