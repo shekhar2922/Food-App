@@ -43,7 +43,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
 
-      await axios.post("https://foodapp07.netlify.app/api/products", newProduct);
+      await axios.post("https://foodapp29.netlify.app/api/products", newProduct);
       setClose(true);
     } catch (err) {
       console.log(err);
